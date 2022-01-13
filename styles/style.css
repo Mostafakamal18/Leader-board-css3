@@ -121,10 +121,30 @@ grid-column-gap: 24px;
 Media queris
 -------------------- */
 /* Mobile Device */
-@media only screen and(max-width:688px) {
-    .players{
-        background-color: green; 
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
     }
+    .players, .blogs, .courses {
+        
+        grid-template-columns: repeat(1, 1fr) ;
+    }
+    .player, .blog {
+        flex-direction: column;
+    }
+  
     
 }
+/* Tablet device */
+@media only screen and (min-width: 688px) and (max-width:992){
+.container{
+    width: 100%;
+}
+    .players, .courses{
+    grid-template-columns: repeat(1, 1fr) ;
+}
+}
+    
+
  
